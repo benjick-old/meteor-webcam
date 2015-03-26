@@ -21,7 +21,7 @@ Template.camera.onRendered(function() {
 
 	Webcam.on( 'error', function(err) {
 		console.log(err); // outputs error to console instead of window.alert
-	}}
+	});
 
 	Webcam.set({
 		width: 320,
