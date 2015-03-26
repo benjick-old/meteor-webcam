@@ -12,9 +12,6 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('WINDOWS-PREVIEW@0.3.0');
-  api.addFiles('webcam.js');
-});
-
   api.export('webcam');
   api.addFiles([
     'webcamjs/webcam.js',
