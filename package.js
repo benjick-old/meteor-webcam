@@ -15,8 +15,9 @@ Package.onUse(function(api) {
   api.addFiles('webcam.js');
 });
 
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('webcam');
-  api.addFiles('webcam-tests.js');
+  api.export('webcam');
+  api.addFiles([
+    'webcamjs/webcam.js',
+    'webcamjs/webcam.swf'
+  ], 'client');
 });
